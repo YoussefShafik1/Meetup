@@ -26,8 +26,19 @@
   </head>
   <body data-spy="scroll" data-target=".side-menu">
     <header>
+      <!-- side bar dots Start -->
+      <ul class="test">
+        <li><a href="#home"></a></li>
+        <li><a href="#speakers"></a></li>
+        <li><a href="#buy-tickets"></a></li>
+        <li><a href="#schedule"></a></li>
+      </ul>
+      <!-- side bar dots End -->
       <!-- I added p-6 and p-7 in bootstrap file, p-7=5rem -->
-      <div class="headerContainer bg-primary p-7 d-flex justify-content-center">
+      <div
+        id="home"
+        class="headerContainer bg-primary p-7 d-flex justify-content-center"
+      >
         <div class="header-left">
           <div class="logo-img">
             <img src="./img/meetup-logo.png" style="width: 180px" alt="Logo" />
@@ -86,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="section2 d-flex flex-column align-items-center">
+    <div id="speakers" class="section2 d-flex flex-column align-items-center">
       <div class="section2-top">
         <h2 class="fw-normal">Meet the Speakers</h2>
       </div>
@@ -221,7 +232,10 @@
         </div>
       </div>
     </div>
-    <div class="section3 bg-warning d-flex flex-column align-items-center">
+    <div
+      id="buy-tickets"
+      class="section3 bg-warning d-flex flex-column align-items-center"
+    >
       <div class="section3-top">
         <h2 class="fw-normal fs-2">Buy Tickets</h2>
       </div>
@@ -252,7 +266,7 @@
         </div>
       </div>
     </div>
-    <div class="section4 d-flex flex-column align-items-center">
+    <div id="schedule" class="section4 d-flex flex-column align-items-center">
       <div class="section4-top"><h2 class="fw-normal">Event Schedule</h2></div>
       <div class="section4-bottom">
         <div class="card text-center">

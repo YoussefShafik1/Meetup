@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +27,90 @@ h6 {
 .header-right-rocket {
   margin-left: 10rem;
 }
+/* side bar dots Start */
+ul.test {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  z-index: 999;
+}
+ul.test a {
+  /* background-color: red; */
+  padding: 10px;
+  /* margin: 10px; */
+  color: black;
+  text-decoration: none;
+}
+
+ul.test li {
+  margin: 10px;
+
+  list-style: none;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+
+ul.test li:first-child:hover ::before {
+  position: absolute;
+  left: -10px;
+
+  content: "Home";
+  background-color: rgb(255, 79, 79);
+  color: #efefef;
+  width: 50px;
+  padding: 1px 3px;
+  border-radius: 10px;
+  z-index: 9999;
+  font-weight: 500;
+}
+ul.test li:nth-child(2):hover ::before {
+  position: absolute;
+  left: -30px;
+
+  content: "Speakers";
+  background-color: rgb(255, 79, 79);
+  color: #efefef;
+  width: 70px;
+  padding: 1px 3px;
+  border-radius: 10px;
+  z-index: 9999;
+  font-weight: 500;
+}
+ul.test li:nth-child(3):hover ::before {
+  position: absolute;
+  left: -15px;
+
+  content: "Tickets";
+  background-color: rgb(255, 79, 79);
+  color: #efefef;
+  width: 55px;
+  padding: 1px 3px;
+  border-radius: 10px;
+  z-index: 9999;
+  font-weight: 500;
+}
+ul.test li:nth-child(4):hover ::before {
+  position: absolute;
+  left: -30px;
+
+  content: "Schedule";
+  background-color: rgb(255, 79, 79);
+  color: #efefef;
+  width: 70px;
+  padding: 1px 3px;
+  border-radius: 10px;
+  z-index: 9999;
+  font-weight: 500;
+}
+ul.test li:hover {
+  height: 15px;
+  width: 15px;
+  transition-duration: 0.5s;
+}
+/* side bar dots End */
 .section1-top h2 {
   color: inherit;
   font-family: inherit;
